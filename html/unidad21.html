@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<html lang="es">
+	<head>
+	<!--Titulo-->
+		<title>Estructuras de registros</title>
+		<!--Caracteres especiales-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Conexion con la hoja de estios y tipos de letra-->
+		<link rel="stylesheet" type="text/css"	href="..\css\style.css" media="screen"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="cuerpo">
+	<!--Div con boton del menu-->
+		<div class="hamburger hamburger--spring" onclick="muestra()">
+		<div class="hamburger-box">
+		  <div class="hamburger-inner"></div>
+		</div>
+	  </div>
+	  
+	  <!--Menu desplegable-->
+	  <nav class="nav" id="switch" >
+			<ul class="list">
+			
+				<li class="list__item">
+				<div class="list__button"><a href="./Inicio.html" class="nav__link">Inicio</a></div>
+				
+				</li>
+                
+                <li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Temario</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./Temario.html" class="nav__link nav__link--inside">Temas</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 1</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad1.html" class="nav__link nav__link--inside">Tipos de Arquitectura</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad11.html" class="nav__link nav__link--inside">Arquitectura Segmentada</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad12.html" class="nav__link nav__link--inside">Multiprocesamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad13.html" class="nav__link nav__link--inside">Analisis de componentes</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad14.html" class="nav__link nav__link--inside">CPU</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad15.html" class="nav__link nav__link--inside">ALU</a>
+						</li>
+                        <li class="list__inside">
+							<a href="./unidad16.html" class="nav__link nav__link--inside">Registros</a>
+						</li>
+                            <li class="list__inside">
+							<a href="./unidad17.html" class="nav__link nav__link--inside">Buses, Memoria, Entrada/Salidad</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 2</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad2.html" class="nav__link nav__link--inside">Organizacion del procesador</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad21.html" class="nav__link nav__link--inside">Estructura de registros</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad22.html" class="nav__link nav__link--inside">El ciclo de instrucción</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad23.html" class="nav__link nav__link--inside">Modos de direccionamiento</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad24.html" class="nav__link nav__link--inside">Casos de estudio de CPU</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 3</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad3.html" class="nav__link nav__link--inside">Chipset</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad31.html" class="nav__link nav__link--inside">Aplicaciones</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad33.html" class="nav__link nav__link--inside">Ambiente de Servicio</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+					<a href="#" class="nav__link">Unidad 4</a>
+					<img src="../media/img/arrow.svg" class="list__arrows">
+					</div>
+					
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="./unidad4.html" class="nav__link nav__link--inside">Aspectos Básicos de la computación paralela</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad41.html" class="nav__link nav__link--inside">Tipos de computación paralela</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad42.html" class="nav__link nav__link--inside">Sistemas de memoria compartida (multiprocesadores)</a>
+						</li>
+						<li class="list__inside">
+							<a href="./unidad43.html" class="nav__link nav__link--inside">Sistemas de memoria distribuida (multicomputadores)</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+			</ul>
+		</nav>
+		<!--Div para el titulo-->
+		<div class="sup">
+			<center class="titulo">Arquitectura de computadoras</center>
+		</div>
+		
+		<div class="info1">
+		 <font class="titulos">Estructura de registros.</font><br>
+		</div>
+		<div class="desc">
+            
+Se emplean para controlar las instrucciones en ejecución, manejar direccionamiento de
+memoria y propiciar la capacidad aritmética.
+<br>            <br><h3>Registro de datos:</h3> Un CPU puede funcionar con datos en uno de tres modos: entre dos
+
+registros, entre registros y una ubicación de Memoria de acceso al azar (RAM - Random-
+Access Memory) y entre dos ubicaciones RAM. Como el CPU está conectado
+
+directamente a los registros, las operaciones que implican dos registros son las más
+rápidas; las que se dan entre ubicaciones RAM son las más lentas. Es decir, junta dos
+registros, añade un registro a una ubicación RAM, o añade dos ubicaciones RAM.<br>
+            
+<br><h3>Registro de direcciones:</h3>Para que un CPU pueda almacenar y recuperar datos en RAM,
+debe tener la dirección de la memoria de la información. Esas operaciones que implican
+RAM usan registros de dirección de memoria. EL CPU no realiza aritmética en estos
+registros; en cambio, los usa para ubicar datos que necesita.<br>
+
+<br><h3>Registro de índice:</h3> Un CPU no puede hacer matemáticas en registros de datos, aunque
+puede hacerlo indirectamente con un registro de índice. Éste trabaja con los registros de
+datos, permitiendo a un programa procesar hilos de información eficazmente.<br>
+
+<br><h3>Registros de segmento:</h3>Un registro de segmento tiene 16 bits de longitud y facilita un
+área de memoria para direccionamiento conocida como segmento actual.
+<br>• Registro Cs:el dos almacena la dirección inicial del segmento de código de un
+programa en el registro CS. Indica la dirección de una instrucción que es buscada
+para su ejecución.<br>
+• Registro Ds:genera una referencia a la localidad de un byte específico en el
+segmento de datos.<br>
+• Registro SS:permite la colocación en memoria de una pila, para almacenamiento
+temporal de dirección y datos.<br>
+• Registro ES:se utiliza para algunas operaciones con cadenas de caracteres se
+utiliza para el manejo de direccionamiento de memoria.<br>
+            
+<br><h3>Registro de banderas:</h3>Es un registro de 16 bits, de los cuales nueve sirven para indicar
+el estado actual de la máquina y el resultado del procesamiento.
+La tabla contiene 16 posiciones (de 0 a 15), que son los 16 bits del registro de banderas,
+numeradas de derecha a izquierda. La posición 0 la encontraremos a la derecha y la
+posición 15 a la izquierda.<br>
+Los bits de las banderas son las siguientes:<br>
+• OF (overflow, desbordamiento): Indica desbordamiento del bit de mayor orden
+después de una operación aritmética de números con signo (1=existe overflow;
+0=no existe overflow). Para operaciones sin signo, no se toma en cuenta esta
+bandera.<br>
+• DF (dirección): Controla la selección de incremento o decremento de los registros
+SI y DI en las operaciones con cadenas de caracteres (1=decremento automático;
+0=incremento). La bandera DF se controla con las instrucciones STD y CLD.<br>
+• IF (interrupción): Controla el disparo de las interrupciones (1=habilita las
+interrupciones; 0=deshabilita las interrupciones). La interrupción no enmascarable
+es la única que no puede ser bloqueada por esta bandera. El estado de la bandera
+IF se controla con las instrucciones STI y CLI.<br>
+• TF (trampa): Permite la operación del procesador en modo de depuración (paso a
+paso).<br>
+• SF (signo): Contiene el signo resultante de una operación aritmética (0=positivo;
+1=negativo).<br>
+• ZF (cero): Indica el resultado de una operación aritmética o de comparación
+(0=resultado diferente de cero; 1=resultado igual a cero).<br>
+• AF (acarreo auxiliar): Contiene el acarreo del bit 3. Esta bandera se prueba con las
+instrucciones DAA y DAS para ajustar el valor de AL después de una suma o resta
+BCD.<br>
+• PF (paridad): Indica si el número de bits 1, del byte menos significativos de una
+operación, es par (0=número de bits 1 es impar; 1=número de bits 1 es par).<br>
+
+• CF (acarreo): Contiene el acarreo del bit de mayor orden después de una
+operación aritmética; también almacena el contenido del último bit en una
+operación de desplazamiento o de rotación.<br>
+            
+<br><h3>Registro de punteros de instrucción:</h3>El registro IP de 16 bits contiene el
+desplazamiento de dirección de la siguiente instrucción que se ejecuta. El IP está
+asociado con el registro CS en el sentido de que el IP indica la instrucción actual dentro
+del segmento de código que se está ejecutando actualmente en la memoria.<br>
+            
+<br><h3>Registros visibles para el usuario:</h3>
+Un registro visible para el usuario es aquel que pueden referenciarse por medio del
+lenguaje que la CPU ejecuta. Se puede caracterizar en las siguientes categorías.
+-Propósito general:
+Son utilizados por el programador para diversas funciones.
+-Datos:
+Pueden utilizarse únicamente para contener datos y no se pueden emplear el cálculo de
+la dirección de un operando.<br>
+            
+		</div>
+		
+		<script src="..\js\main.js"></script>
+	</body>
+</html>
